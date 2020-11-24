@@ -1,0 +1,200 @@
+/* Color palette: https://coolors.co/1c1c1c-92817a-f1dabf-fffbff-008148
+
+--eerie-black: #1c1c1cff;
+--light-slate-gray: #7c90a0ff;
+--grullo: #b5aa9dff;
+--ash-gray: #b9b7a7ff;
+--aquamarine: #a5ffd6ff;
+--cultured: #FBFAF8;
+--bistre: #251605;
+--yellow-crayola: #F6E27F;
+*/
+
+/* Global styles
+-----------------------------*/
+/* Box model fix */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  color: #1c1c1cff;
+  margin: 0; /*This is to stretch the page to the borders of the website*/
+  padding: 0; /*This is to stretch the page to the borders of the website*/
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+}
+img {
+  width: 300px; /*We do this so that the images aren't as big. We also pair this with 600 wide images to accomodate Iris displays*/
+}
+ul {
+  padding-inline-start: 20px;
+}
+h1 {
+  font-size: 100px;
+  line-height: 1; /*Reduce the space between the h1 and h2 elements*/
+}
+h2 {
+  font-size: 45px;
+}
+h1,
+h2 {
+  font-family: "Caveat", cursive;
+  font-weight: 400; /*remove the bold of h1 and h2*/
+  margin: 0; /*Reduce the margin so that there isn't much space between them*/
+}
+.content-wrap {
+  max-width: 800px; /*For responsive web design*/
+  width: 85%; /*To leave some space around the edges*/
+  margin: 0 auto; /*We do this so that the content centers itself*/
+  padding: 30px 0; /*This is to cover the gaps between the contents */
+}
+.item-details h3 + p {
+  font-style: italic;
+}
+.item-details h3 ~ p {
+  margin: 0;
+}
+/*Class for seperators*/
+.divider > section {
+  border-bottom: 1px dashed #343434;
+  padding: 25px 0;
+}
+/*Omit the seperator for the item*/
+.divider > section:last-of-type {
+  border-bottom: none;
+}
+.divider > section:first-of-type {
+  padding-top: 0;
+}
+/* Profile 
+-----------------------------*/
+header {
+  background: #7c90a0;
+  color: #c5e063;
+  font-size: 20px;
+}
+/* Projects 
+-----------------------------*/
+.projects {
+  background: #a5ffd6;
+}
+.projects .btn {
+  color: #ca054d;
+  background: #f6e27f;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 4px;
+  display: inline-block;
+}
+.projects .btn:hover {
+  text-decoration: none;
+  background: rgba(246, 226, 127, 50%);
+}
+/*Flexbox items for each projects*/
+.project-item {
+  padding: 5px;
+  flex: 1 1 auto;
+  display: inline-block;
+}
+
+/* Work Experience
+-----------------------------*/
+.work_experience {
+  background: #b9b7a7;
+}
+
+/* Education
+-----------------------------*/
+.education {
+  background-image: url(../images/joanna-kosinska-unsplash.jpg);
+  background-size: cover; /*To preserve the image dimensions*/
+  background-position: top right; /*To make it so that the pencils will always show*/
+  padding-bottom: 100px; /*To show more of the image*/
+}
+.education p {
+  width: 60%; /*Prevents the text from being under the pencil*/
+}
+/* Contact Info
+-----------------------------*/
+footer {
+  color: #251605;
+  background: #7c90a0;
+}
+/*Creates a flexbox container for the footer*/
+.contact-list {
+  list-style-type: none;
+  padding: 0;
+}
+/*Space the links out, and adds accessibility*/
+.contact-list a {
+  padding: 15px;
+  display: inline-block;
+}
+
+/* Responsive
+-----------------------------*/
+@media screen and (min-width: 750px) {
+  .center-header {
+    text-align: center;
+  }
+  h3 {
+    padding: 8px 0;
+    margin-bottom: 0;
+  }
+  /*Flexbox container for projects*/
+  .project-container {
+    display: flex;
+    justify-content: space-around;
+  }
+  .projects h2 {
+    color: #23022e;
+    background: #d74e09;
+  }
+  .projects h3 {
+    color: #235789;
+    background: #ffe74c;
+    margin-top: 0; /*Allign the project names with the top of images.*/
+    padding-left: 5px; /*Adds a bit of padding so that the text isn't stuck at the edge of the background*/
+  }
+
+  /*Creates a grid for Work Experience*/
+  .job-item {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    column-gap: 40px;
+  }
+  .work_experience h2 {
+    color: #23022e;
+    background: #3993dd;
+  }
+  .work_experience h3 {
+    color: #18020c;
+    background: #d81e5b;
+  }
+  /* Flexbox to make the links stay in the middle */
+  .contact-list {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 749px) {
+  /* Change the h1 to be smaller for smaller displays, and reduce spacing */
+  h1 {
+    font-size: 75px;
+    line-height: 0.9;
+    margin-bottom: 20px;
+  }
+  /* Change h2 to reduce the spacing */
+  h2 {
+    line-height: 1;
+  }
+  .contact-list a {
+    padding: 5px;
+  }
+}
