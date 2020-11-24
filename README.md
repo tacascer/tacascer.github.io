@@ -7,4 +7,4 @@ Here are some relevant links you can visit.
 * [My LinkedIn](https://www.linkedin.com/in/timtran2018/)
 
 Kitty will be here waiting for you while you check those out!
-![kitten](https://imgur.com/a/V7Mdzvd "kitten")
+![kitten](https://i.imgur.com/5urMfuf.jpg "kitten")
