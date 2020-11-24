@@ -1,4 +1,4 @@
-## Welcome to Tim's own personal website!
+## Tim's personal site!
 
 
 Here are some relevant links you can visit.
