@@ -1,4 +1,5 @@
-## Tim's personal site!
+## Welcome to my website!
+### This is where I document my numerous undertakings. Hope you enjoy the ride.
 
 
 Here are some relevant links you can visit.
