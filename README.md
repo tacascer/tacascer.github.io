@@ -4,3 +4,6 @@
 Here are some relevant links you can visit.
 
 * [My portfolio](https://tacascer.github.io/portfolio)
+
+This kitty while be here waiting for you while you check those out!
+![kitten](https://github.com/tacascer/tacascer.github.io/blob/main/images/cat.jpg "kitten")
